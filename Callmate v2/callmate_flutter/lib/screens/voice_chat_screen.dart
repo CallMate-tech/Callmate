@@ -82,7 +82,7 @@ class _VoiceChatScreenState extends State<VoiceChatScreen>
 
     var request = http.MultipartRequest(
       'POST',
-      Uri.parse('https://b01c-49-204-116-234.ngrok-free.app/process_audio'),
+      Uri.parse('https://4602-59-145-65-66.ngrok-free.app/process_audio'),
     );
     request.fields['user_id'] = widget.userId;
     request.files.add(await http.MultipartFile.fromPath('file', file.path));
@@ -120,7 +120,7 @@ class _VoiceChatScreenState extends State<VoiceChatScreen>
   Future<void> endCall() async {
     print("End Call button pressed");
     await http.post(
-      Uri.parse("https://b01c-49-204-116-234.ngrok-free.app/end_call"),
+      Uri.parse("https://4602-59-145-65-66.ngrok-free.app/end_call"),
       headers: {"Content-Type": "application/json"},
       body: jsonEncode({"user_id": widget.userId}),
     );

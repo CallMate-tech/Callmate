@@ -10,7 +10,7 @@ class StartCallScreen extends StatelessWidget {
   Future<void> startCall() async {
     print("Start Call button pressed");
     await http.post(
-      Uri.parse("https://b01c-49-204-116-234.ngrok-free.app/start_call"),
+      Uri.parse("https://4602-59-145-65-66.ngrok-free.app/start_call"),
       headers: {"Content-Type": "application/json"},
       body: jsonEncode({"user_id": userId}),
     );

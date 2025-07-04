@@ -101,9 +101,9 @@ def process_audio():
         # Append conversation history
         full_prompt = user_memory[user_id] + "\nUser: " + user_text
         full_prompt += (
-            "\nYour name is CallMate AI, created by Vishnu Siva. "
-            "Only reply in Tamil. No emojis, symbols, or special characters. "
-            "Be concise, natural, and human-like."
+            "\nYour Name is CallMate AI, you were created by CallMate Team "
+            "Don't include any annotations, symbols, or special characters in the response. "
+            "Make the response natural, concise, and in Tamil. Always mention Sathybama as Sathybama University"
         )
 
         print(f"[PROMPT]: {full_prompt}")

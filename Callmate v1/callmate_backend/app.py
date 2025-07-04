@@ -53,7 +53,7 @@ def process_audio():
         print("Transcribing audio...")
         user_text = transcribe_audio(input_path)
         user_text += (
-            " your Name is CallMate AI, you were created by Vishnu Siva. "
+            "Your Name is CallMate AI, you were created by CallMate Team "
             "Don't include any annotations, symbols, or special characters in the response. "
             "Make the response natural, concise, and in Tamil."
         )

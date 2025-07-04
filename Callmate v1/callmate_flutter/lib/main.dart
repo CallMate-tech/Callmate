@@ -78,7 +78,7 @@ class _MyAppState extends State<MyApp> with TickerProviderStateMixin {
     });
     var request = http.MultipartRequest(
       'POST',
-      Uri.parse('https://80f2-49-204-116-234.ngrok-free.app/process_audio'),
+      Uri.parse('https://5638-59-145-65-66.ngrok-free.app/process_audio'),
     );
     request.files.add(await http.MultipartFile.fromPath('file', file.path));
     var response = await request.send();
